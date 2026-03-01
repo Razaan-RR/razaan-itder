@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Courses = () => {
     const [courses, setCourses] = useState([]);
@@ -42,9 +43,9 @@ const Courses = () => {
     return (
         <div className="m-mt_16px">
             <div className="flex justify-end p-4">
-                <div className="bg-blue-600 text-white px-4 py-2 rounded-full font-bold">
+                <Link to='/cart' className="bg-blue-600 text-white px-4 py-2 rounded-full font-bold">
                     Cart: {cart.length} Items
-                </div>
+                </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
