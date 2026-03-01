@@ -89,7 +89,7 @@ const Cart = () => {
                             <p className="font-bold">Total Price</p>
                             <p className="font-bold">৳{totalPrice}</p>
                         </div>
-                        <Link to="/cart/checkout" className="bg-black text-white py-2 w-full block text-center hover:bg-gray-800">
+                        <Link to="/checkout" className="bg-black text-white py-2 w-full block text-center hover:bg-gray-800">
                             PROCEED TO CHECKOUT
                         </Link>
                     </div>
