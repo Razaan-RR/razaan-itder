@@ -79,11 +79,6 @@ const NavbarTop = () => {
         >
           <div className="flex items-center gap-8">
 
-          <div>
-            <FaShoppingCart />
-            <FaShoppingCart size={20} color="blue" /> 
-          </div>
-
           <h1 className="text-blue-500 text-xl font-medium">{userData?.userData.name}</h1>
          {userData?.userData.image ? 
          <img
