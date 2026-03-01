@@ -7,6 +7,8 @@ import { toast } from "react-toastify";
 import useUser from "../../Security/useUser";
 import { FaUserCircle } from "react-icons/fa";
 import useSmallScreen from "../../Hooks/useSmallScreen";
+import { FaShoppingCart } from 'react-icons/fa'; 
+
 
 const NavbarTop = () => {
   const { open, setOpen, sidebarRef } = useContext(OrderContext);
@@ -70,11 +72,18 @@ const NavbarTop = () => {
           />
         </div>
         <div className="hidden lg:block"></div>
+        
 
         <div
           className="flex flex-col items-center justify-center text-text_sm font-semibold relative group"
         >
           <div className="flex items-center gap-8">
+
+          <div>
+            <FaShoppingCart />
+            <FaShoppingCart size={20} color="blue" /> 
+          </div>
+
           <h1 className="text-blue-500 text-xl font-medium">{userData?.userData.name}</h1>
          {userData?.userData.image ? 
          <img
